@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurcus Accessories — Katalog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="masthead">
+    <h1>Aurcus Accessories</h1>
+    <p class="meta" id="meta">Memuat data…</p>
+    <p class="note" id="note" hidden></p>
+  </header>
+
+  <section class="filters" aria-label="Filter katalog">
+    <div class="search">
+      <label for="q" class="sr-only">Cari nama atau tipe</label>
+      <input type="search" id="q" placeholder="Cari nama atau tipe, mis. Kamui" autocomplete="off">
+    </div>
+
+    <div class="chip-group" role="group" aria-labelledby="lbl-level">
+      <span class="group-label" id="lbl-level">Level</span>
+      <div class="chips" id="chips-level"></div>
+    </div>
+    <div class="chip-group" role="group" aria-labelledby="lbl-tipe">
+      <span class="group-label" id="lbl-tipe">Tipe</span>
+      <div class="chips" id="chips-tipe"></div>
+    </div>
+    <div class="chip-group" role="group" aria-labelledby="lbl-varian">
+      <span class="group-label" id="lbl-varian">Varian</span>
+      <div class="chips" id="chips-varian"></div>
+    </div>
+
+    <label class="check">
+      <input type="checkbox" id="ready-only">
+      <span>Hanya yang ready</span>
+    </label>
+  </section>
+
+  <p class="result-info" id="result-info" aria-live="polite"></p>
+
+  <main class="catalog" id="catalog"></main>
+
+  <div class="empty" id="empty" hidden>
+    <p>Tidak ada item yang cocok dengan filter ini.</p>
+    <button type="button" class="ghost" id="reset-btn">Reset filter</button>
+  </div>
+
+  <footer class="foot">
+    <button type="button" class="ghost" id="load-btn">Muat accessories.json</button>
+    <input type="file" id="load-input" accept="application/json,.json" hidden>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
