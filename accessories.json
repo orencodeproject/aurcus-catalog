@@ -1,0 +1,26 @@
+{
+  "category": "accessories",
+  "last_updated": "2026-09-21T09:45:35.971Z",
+  "items": [
+    {"id":"HEAVENLY_THUNDER-R-115-RING","nama":"Heavenly Thunder","tipe":"ring","level":115,"varian":"R","harga":65000,"stok":1},
+    {"id":"HEAVENLY_THUNDER-R-115-EARRING","nama":"Heavenly Thunder","tipe":"earring","level":115,"varian":"R","harga":65000,"stok":1},
+    {"id":"HEAVENLY_THUNDER-NONR-115-RING","nama":"Heavenly Thunder","tipe":"ring","level":115,"varian":"non-R","harga":35000,"stok":2},
+    {"id":"HEAVENLY_THUNDER-NONR-115-EARRING","nama":"Heavenly Thunder","tipe":"earring","level":115,"varian":"non-R","harga":35000,"stok":2},
+    {"id":"KAMUI-NONR-115-NECKLACE","nama":"Kamui","tipe":"necklace","level":115,"varian":"non-R","harga":80000,"stok":1},
+    {"id":"KAMUI-NONR-115-EARRING","nama":"Kamui","tipe":"earring","level":115,"varian":"non-R","harga":40000,"stok":2},
+    {"id":"DARK_FLAME-R-110-NECKLACE","nama":"Dark Flame","tipe":"necklace","level":110,"varian":"R","harga":50000,"stok":1},
+    {"id":"DARK_FLAME-R-110-RING","nama":"Dark Flame","tipe":"ring","level":110,"varian":"R","harga":25000,"stok":1},
+    {"id":"DARK_FLAME-R-110-EARRING","nama":"Dark Flame","tipe":"earring","level":110,"varian":"R","harga":25000,"stok":1},
+    {"id":"KAMUI-NONR-110-NECKLACE","nama":"Kamui","tipe":"necklace","level":110,"varian":"non-R","harga":60000,"stok":1},
+    {"id":"KAMUI-NONR-110-RING","nama":"Kamui","tipe":"ring","level":110,"varian":"non-R","harga":30000,"stok":1},
+    {"id":"KAMUI-NONR-110-EARRING","nama":"Kamui","tipe":"earring","level":110,"varian":"non-R","harga":30000,"stok":1},
+    {"id":"TUTELARY-NONR-110-RING","nama":"Tutelary","tipe":"ring","level":110,"varian":"non-R","harga":10000,"stok":1},
+    {"id":"TUTELARY-NONR-110-EARRING","nama":"Tutelary","tipe":"earring","level":110,"varian":"non-R","harga":10000,"stok":1}
+  ],
+  "sets": [
+    {"id":"HIDDEN_PHANTOM-NONR-115-SET","nama":"Hidden Phantom","tipe":"set","isi":["necklace","ring","earring"],"level":115,"varian":"non-R","harga":25000,"stok":1},
+    {"id":"MAJESTIC-R-115-SET","nama":"Majestic","tipe":"set","isi":["necklace","ring","earring"],"level":115,"varian":"R","harga":30000,"stok":1},
+    {"id":"HIDDEN_SWORD_MASTERS-NONR-110-SET","nama":"Hidden Sword Master's","tipe":"set","isi":["necklace","ring","earring"],"level":110,"varian":"non-R","harga":15000,"stok":1},
+    {"id":"PHANTOM-NONR-110-SET","nama":"Phantom","tipe":"set","isi":["necklace","ring","earring"],"level":110,"varian":"non-R","harga":15000,"stok":1}
+  ]
+}
