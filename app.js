@@ -182,8 +182,8 @@
      ========================================================= */
 
   const MASTER_BASE = [
-    [115, "R",     "Heavenly Thunder",       130000],
-    [115, "non-R", "Heavenly Thunder",        70000],
+    [115, "R",     "Heavenly Thunder",        130000],
+    [115, "non-R", "Heavenly Thunder",         70000],
     [115, "R",     "Hidden Kamui",            140000],
     [115, "non-R", "Hidden Kamui",             70000],
     [115, "R",     "Hidden Phantom",           50000],
@@ -193,7 +193,7 @@
     [115, "R",     "Nightlight",              100000],
     [115, "non-R", "Nightlight",               30000],
     [115, "R",     "Phantom",                  60000],
-    [115, "R",     "Tutelary",                80000],
+    [115, "R",     "Tutelary",                 80000],
     [115, "non-R", "Tutelary",                 40000],
 
     [110, "R",     "Dark Flame",               50000],
@@ -204,10 +204,12 @@
     [110, "R",     "Nightlight",               40000],
     [110, "R",     "Phantom",                  30000],
     [110, "R",     "Sword Master",             30000],
-    [110, "R",     "Tutelary",                50000],
+    [110, "R",     "Tutelary",                 50000],
 
     [115, "R",     "Thunderous",               40000],
     [115, "R",     "Sword Master",             60000],
+    [115, "R",     "White Night",              20000],
+
     [110, "non-R", "Tutelary",                 20000],
     [110, "non-R", "Nightlight",               20000]
   ];
