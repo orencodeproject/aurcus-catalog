@@ -33,9 +33,10 @@
     USD_RATE: 17000,
 
     /*
-      Setiap harga yang dikonversi ke USD ditambah markup flat $1.
+      Markup konversi USD = 20% dari hasil konversi IDR -> USD.
+      (persentase, bukan flat tambahan)
     */
-    USD_MARKUP: 1.2
+    USD_MARKUP_PERCENT: 0.2
   };
 
 
@@ -329,12 +330,58 @@
   }
 
 
+  /*
+    Konversi IDR -> USD:
+    1. base = harga IDR / kurs
+    2. tambahkan markup 20% dari base
+    3. bulatkan dengan aturan custom (lihat roundUsdCustom)
+  */
   function formatDollar(value) {
-    const usd =
-      (safeNumber(value) / CONFIG.USD_RATE) *
-      CONFIG.USD_MARKUP;
 
-    return "$" + usd.toFixed(2);
+    const base =
+      safeNumber(value) / CONFIG.USD_RATE;
+
+    const withMarkup =
+      base * (1 + CONFIG.USD_MARKUP_PERCENT);
+
+    const rounded =
+      roundUsdCustom(withMarkup);
+
+    return (
+      "$" +
+      (Number.isInteger(rounded)
+        ? rounded
+        : rounded.toFixed(1))
+    );
+  }
+
+
+  /*
+    Aturan pembulatan USD (custom, bukan pembulatan matematika biasa):
+
+    - desimal == .5  -> tetap .5           (contoh: 7.5  -> 7.5)
+    - desimal <  .5  -> dibulatkan ke .5   (contoh: 7.2  -> 7.5)
+    - desimal >  .5  -> dibulatkan ke atas (contoh: 7.6  -> 8)
+
+    Jadi hasil akhir SELALU salah satu dari: bilangan bulat, atau x.5.
+  */
+  function roundUsdCustom(value) {
+
+    const intPart = Math.floor(value);
+    const decimal = value - intPart;
+
+    // toleransi floating point kecil di sekitar .5
+    const EPS = 1e-9;
+
+    if (Math.abs(decimal - 0.5) < EPS) {
+      return intPart + 0.5;
+    }
+
+    if (decimal < 0.5) {
+      return intPart + 0.5;
+    }
+
+    return intPart + 1;
   }
 
 
