@@ -30,7 +30,7 @@
       Kurs IDR -> USD (perkiraan, per akhir September 2026).
       Update angka ini kalau kurs berubah signifikan.
     */
-    USD_RATE: 17000,
+    USD_RATE: 16500,
 
     /*
       Markup konversi USD = 20% dari hasil konversi IDR -> USD.
