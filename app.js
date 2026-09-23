@@ -30,12 +30,12 @@
       Kurs IDR -> USD (perkiraan, per akhir September 2026).
       Update angka ini kalau kurs berubah signifikan.
     */
-    USD_RATE: 16300,
+    USD_RATE: 17000,
 
     /*
       Setiap harga yang dikonversi ke USD ditambah markup flat $1.
     */
-    USD_MARKUP: 1
+    USD_MARKUP: 1.2
   };
 
 
@@ -331,7 +331,7 @@
 
   function formatDollar(value) {
     const usd =
-      (safeNumber(value) / CONFIG.USD_RATE) +
+      (safeNumber(value) / CONFIG.USD_RATE) *
       CONFIG.USD_MARKUP;
 
     return "$" + usd.toFixed(2);
