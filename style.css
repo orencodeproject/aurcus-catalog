@@ -767,20 +767,22 @@ footer {
 
 .total span {
   color: #707278;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .total strong {
   color: #e1d7bd;
-  font-size: 16px;
-}
+  font-size: 22px;   /* dari 16px → 22px, biar jelas lebih besar */
+  }
 
 .payment-support {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;   /* dari 8px → 20px, kasih jarak/baris kosong */
+  padding-bottom: 14px;
+  border-bottom: 1px solid #202227;   /* garis pemisah biar makin rapi */
   text-align: center;
 }
 
