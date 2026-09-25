@@ -1124,8 +1124,8 @@ const MASTER_SETS = [
 
     button.title =
       currency === "USD"
-        ? t("currency_switch_to_idr")
-        : t("currency_switch_to_usd");
+        ? t("currency_switch_to_usd")
+        : t("currency_switch_to_idr");
   }
 
 
