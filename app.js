@@ -14,7 +14,7 @@
   const CONFIG = {
     WA_NUMBER: "6285774792983",
     
-    TELEGRAM_USERNAME: "orenaurcus" 
+    TELEGRAM_USERNAME: "orenaurcus", 
 
     DATA_URL: "accessories.json",
 
