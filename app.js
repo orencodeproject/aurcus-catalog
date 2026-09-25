@@ -394,7 +394,7 @@ const MASTER_SETS = [
   */
   function formatPrice(value) {
   if (!value) {
-    return "…";
+    return "-";
   }
   return currency === "USD"
     ? formatDollar(value)
