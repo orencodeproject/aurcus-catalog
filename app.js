@@ -1106,10 +1106,10 @@ const MASTER_SETS = [
 
     if (label) {
       label.textContent =
-        currency === "USD" ? "$" : "Rp";
+        currency === "USD" ? "Rp" : "$";
     } else {
       button.textContent =
-        currency === "USD" ? "$" : "Rp";
+        currency === "USD" ? "Rp" : "$";
     }
 
     button.setAttribute(
