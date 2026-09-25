@@ -775,6 +775,28 @@ footer {
   font-size: 16px;
 }
 
+.payment-support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.payment-support-label {
+  color: #65676d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+}
+
+.payment-support-list {
+  color: #b9b5ab;
+  font-size: 10px;
+}
+
 .checkout {
   width: 100%;
   height: 44px;
