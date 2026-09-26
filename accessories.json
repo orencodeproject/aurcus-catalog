@@ -2,7 +2,7 @@
   "category": "accessories",
   "last_updated": "2026-09-21T09:45:35.971Z",
   "items": [
-    {"id":"HEAVENLY_THUNDER-R-115-RING","nama":"Heavenly Thunder","tipe":"ring","level":115,"varian":"R","harga":65000,"stok":8},
+    {"id":"HEAVENLY_THUNDER-R-115-RING","nama":"Heavenly Thunder","tipe":"ring","level":115,"varian":"R","harga":65000,"stok":12},
     {"id":"HEAVENLY_THUNDER-R-115-EARRING","nama":"Heavenly Thunder","tipe":"earring","level":115,"varian":"R","harga":65000,"stok":1},
     {"id":"HEAVENLY_THUNDER-NONR-115-RING","nama":"Heavenly Thunder","tipe":"ring","level":115,"varian":"non-R","harga":35000,"stok":2},
     {"id":"HEAVENLY_THUNDER-NONR-115-EARRING","nama":"Heavenly Thunder","tipe":"earring","level":115,"varian":"non-R","harga":35000,"stok":2},
